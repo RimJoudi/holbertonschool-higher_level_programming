@@ -10,7 +10,7 @@ listint_t *head;
 listint_t *tmp;
 tmp = list;
 head = list->next;
-if (list == NULL || tmp == NULL)
+if (list == NULL || tmp == NULL || head == NULL)
 return (0);
 while (tmp != NULL && head != NULL && head->next)
 {
