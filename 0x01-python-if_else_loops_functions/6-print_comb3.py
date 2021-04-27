@@ -4,4 +4,4 @@ for i in range(0, 9):
         if not(i ==  8 and x == 9):
             print("{:d}{:d}".format(i, x), end=", ")
         else:
-            print("{:d}{:d}".format(i, x))
+            print("{:d}{:d}".format(i, x), end="\n")
