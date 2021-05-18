@@ -14,10 +14,10 @@ class MagicClass:
         """
         self.__radius = 0
         if type(radius) is not int:
-            raise TypeError("radius must be a number")
+            raise TypeError('radius must be a number')
 
         if type(radius) is not float:
-            raise TypeError("radius must be a number")
+            raise TypeError('radius must be a number')
         else:
             self.__radius = radius
 
