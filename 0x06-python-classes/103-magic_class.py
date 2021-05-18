@@ -12,6 +12,7 @@ class MagicClass:
         Args:
             radius (int or float): radius of the circle
         """
+        self._radius = 0
         if radius is not int:
             raise TypeError("radius must be a number")
 
