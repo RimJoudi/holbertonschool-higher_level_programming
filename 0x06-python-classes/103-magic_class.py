@@ -12,14 +12,14 @@ class MagicClass:
         Args:
             radius (int or float): radius of the circle
         """
-        self._radius = 0
+        self.__radius = 0
         if radius is not int:
             raise TypeError("radius must be a number")
 
         if radius is not float:
             raise TypeError("radius must be a number")
         else:
-            self._radius = radius
+            self.__radius = radius
 
     def area(self):
         """
@@ -27,7 +27,7 @@ class MagicClass:
         Returns:
             the area of the circle
         """
-        return ((self._radius ** 2) * math.pi)
+        return ((self.__radius ** 2) * math.pi)
 
     def circumference(self):
         """
@@ -35,4 +35,4 @@ class MagicClass:
         Returns:
             the perimeter of the circule
         """
-        return (2 * math.pi * self._radius)
+        return (2 * math.pi * self.__radius)
