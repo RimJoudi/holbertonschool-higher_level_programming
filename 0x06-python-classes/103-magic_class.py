@@ -2,7 +2,7 @@
 from math import pi
 
 
-class MagicClass:  
+class MagicClass:
     """
     class MagicClass
     """
@@ -10,11 +10,11 @@ class MagicClass:
         """
         init method
         Args:
-            radius (int or float)
+            radius (int or float): radius of the circle
         """
         if radius is not int:
             raise TypeError("radius must be a number")
-            
+
         if radius is not float:
             raise TypeError("radius must be a number")
         else:
@@ -24,7 +24,7 @@ class MagicClass:
         """
         Instance method
         Returns:
-            the area of the circule
+            the area of the circle
         """
         return ((self._radius ** 2) * pi)
 
