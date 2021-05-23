@@ -24,3 +24,8 @@ Test5:
 >>> say_my_name(50, "Smith")
 Traceback (most recent call last):
 TypeError: first_name must be a string
+
+Test6:
+>>> say_my_name("Smith", 50)
+Traceback (most recent call last):
+TypeError: last_name must be a string
