@@ -2,6 +2,8 @@
 """
 Module to print a text with 2 new lines
 """
+
+
 def text_indentation(text):
     """
     a function that prints a text with 2 new lines/
@@ -12,7 +14,6 @@ def text_indentation(text):
         TypeError: if the text is not str
     Returns:
         the new text
-    
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
