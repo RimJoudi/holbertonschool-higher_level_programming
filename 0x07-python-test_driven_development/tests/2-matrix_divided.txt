@@ -39,7 +39,12 @@ Test8: matrix divided by div = float('inf')
 >>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf'))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
-Test9: matrix of int/string types
+Test9: testing when matrix is None
 >>> matrix_divided(None, 3)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test10: 
+>>> matrix_divided([[3], [4, 5, 6]], 3)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
