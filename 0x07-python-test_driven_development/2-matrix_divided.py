@@ -2,6 +2,8 @@
 """
 Module to divide all elements of matrix
 """
+
+
 def matrix_divided(matrix, div):
     """
     function that divides all elements of a matrix.
@@ -17,7 +19,8 @@ def matrix_divided(matrix, div):
         new matrix
     """
     if not isinstance(matrix, (list, int, float)):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists)\
+            of integers/floats")
     for i in matrix:
         if len(i) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
@@ -26,7 +29,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     new_matrix = []
-    for i in range (0,len(matrix)):
+    for i in range(0, len(matrix)):
         a = []
         for j in matrix[i]:
             a.append(round((j / div), 2))
