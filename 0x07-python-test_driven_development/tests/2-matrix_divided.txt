@@ -34,3 +34,7 @@ Test7: matrix of int/string types
 >>> matrix_divided([[1, 2, "Rym"], [4, "Holbie", 6]], 3)
 Traceback (most recent call last):
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+Test8: matrix divided by div = float('inf')
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
