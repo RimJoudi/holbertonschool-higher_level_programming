@@ -1,0 +1,31 @@
+The ``text_indentation` module
+===============================================================================
+Using ``text_indentation``
+-------------------------------------------------------------------------------
+
+Import text_indentation from 5-text_indentation
+
+    >>> text_indentation= __import__('5-text_indentation').text_indentation
+
+Test1: 
+>>> text_indentation(1236)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Test2: 
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test3: 
+>>> text_indentation("Rym Joudi, holberton school.")
+Rym Joudi,
+<BLANKLINE>
+holberton school.
+<BLANKLINE>
+
+Test4: 
+>>> text_indentation("holbie? yees")
+holbie?
+<BLANKLINE>
+yees
