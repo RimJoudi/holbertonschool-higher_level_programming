@@ -14,7 +14,6 @@ class Rectangle:
         TypeError: when width/height not int type
         ValueError: when width/height less than 0
     """
-    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """
@@ -22,7 +21,6 @@ class Rectangle:
         """
         self.height = height
         self.width = width
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -101,5 +99,4 @@ class Rectangle:
         """
         deletes an instance of Rectangle
         """
-        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
