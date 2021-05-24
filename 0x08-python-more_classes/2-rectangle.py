@@ -3,6 +3,7 @@
 Rectangle module
 """
 
+
 class Rectangle:
     """
     class that defines Rectangle
