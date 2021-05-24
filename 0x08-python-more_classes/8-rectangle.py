@@ -27,7 +27,6 @@ class Rectangle:
         self.width = width
         Rectangle.number_of_instances += 1
 
-
     @property
     def width(self):
         """
@@ -108,7 +107,6 @@ class Rectangle:
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
-
     def bigger_or_equal(rect_1, rect_2):
         """
         returns the biggest rectangle based on the area
@@ -120,7 +118,6 @@ class Rectangle:
         Returns:
             the biggest rectangle based on the area
             rect_1 if equals
-            
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -134,4 +131,3 @@ class Rectangle:
             return (rect_1)
         else:
             return (rect_2)
-
