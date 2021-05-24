@@ -133,8 +133,6 @@ class Rectangle:
         else:
             return (rect_2)
 
-
-    
     @classmethod
     def square(cls, size=0):
         """
@@ -142,6 +140,6 @@ class Rectangle:
         Args:
             size(int): size of the square
         Returns:
-            new Rectangle instance 
+            new Rectangle instance
         """
         return cls(size, size)
