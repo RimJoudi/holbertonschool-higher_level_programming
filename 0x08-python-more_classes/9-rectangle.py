@@ -92,6 +92,7 @@ class Rectangle:
                 for j in range(0, self.__width):
                     rectangle.append(str(self.print_symbol))
                 rectangle.append("\n")
+            del rectangle[-1]
             return (''.join(rectangle))
 
     def __repr__(self):
