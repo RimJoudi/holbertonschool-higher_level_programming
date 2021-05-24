@@ -3,10 +3,6 @@
 Rectangle module
 """
 
-
-from typing import AsyncIterable
-
-
 class Rectangle:
     """
     class that defines Rectangle
