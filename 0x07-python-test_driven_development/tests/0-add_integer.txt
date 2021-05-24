@@ -54,3 +54,8 @@ Test10: testing with b of type float('inf')
     >>> add_integer(1, float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
+
+Test11: testing with b of type float('NaN')
+    >>> add_integer(1, float('NaN'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
