@@ -37,8 +37,16 @@ Test3:
         []
 
 Test4:
-     >>> my_list = MyList(["RYM", "AT", "Holberton"])
+    >>> my_list = MyList(["RYM", "AT", "Holberton"])
     >>> my_list.print_sorted()
         ['AT', 'Holberton', 'RYM']
     >>> print(my_list)
         ['RYM', 'AT', 'Holberton']
+
+Test5: testing with a float arg so it returns an integer after
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+        [5]
+    >>> print(my_list)
+        [5]
