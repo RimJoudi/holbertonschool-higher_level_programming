@@ -9,4 +9,4 @@ def read_file(filename=""):
         filename(string): the given file name
     """
     with open(filename, 'r', encoding="UTF8") as f:
-        print(f.read())
+        print(f.read(), end="")
