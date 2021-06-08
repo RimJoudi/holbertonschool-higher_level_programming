@@ -108,10 +108,10 @@ class Rectangle(Base):
         returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return ("[Rectangle] ({}) {}/{}- {}/{}".format(self.id,
-                                                       self.__x,
-                                                       self.__y,
-                                                       self.__width,
-                                                       self.__height))
+                                                       self.x,
+                                                       self.y,
+                                                       self.width,
+                                                       self.height))
 
     def update(self, *args, **kwargs):
         """
