@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const square = require('./5-square');
+const csquare = require('./5-square');
 
-class Square extends square {
+class Square extends csquare {
   charPrint (c) {
     if (c === undefined) {
       this.print();
