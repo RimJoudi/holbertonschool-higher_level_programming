@@ -7,8 +7,12 @@ class Square extends csquare {
     if (c === undefined) {
       this.print();
     } else {
+      let k = '';
+      for (let i = 0; i < this.width; i++) {
+        k += c;
+      }
       for (let i = 0; i < this.height; i++) {
-        console.log('C'.repeat(this.width));
+        console.log(k);
       }
     }
   }
