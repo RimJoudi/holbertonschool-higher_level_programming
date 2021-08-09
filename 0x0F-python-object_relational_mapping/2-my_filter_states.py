@@ -23,7 +23,9 @@ def myfilter_states():
                          passwd=password, db=database)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name='{}' ORDER BY id ASC".format(searchstate))
+    cur.execute("SELECT * FROM states\
+                WHERE name='{}'\
+                ORDER BY id ASC".format(searchstate))
     rows = cur.fetchall()
     for row in rows:
         print(row)
