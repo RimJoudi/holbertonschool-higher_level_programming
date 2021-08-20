@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-takes a URL, sends a request to it and displays the value of the X-Request-Id variable found 
+displays the value of the X-Request-Id variable found
 in the header of the response.
 """
 
